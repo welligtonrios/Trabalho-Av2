@@ -10,7 +10,7 @@ public class Locacao {
 	private int valor;
 	
 	
-	//construtores para add filme e socio
+	//metodos especiais 
 	
 	
 	
@@ -20,7 +20,6 @@ public class Locacao {
 		filmes.add(filme);
 		filme.setStatus(false);
 		
-		
 	}
 	
 	public Locacao(Socio socio, ArrayList<Copia> filmes) {
@@ -28,6 +27,7 @@ public class Locacao {
 		this.socio = socio;
 		this.filmes = filmes;
 	}
+	
 	
 
 	public Date getData() {
@@ -46,12 +46,37 @@ public class Locacao {
 		this.valor = valor;
 	}
 
+
+	
+	
+	public Socio getSocio() {
+		return socio;
+	}
+
+	public void setSocio(Socio socio) {
+		this.socio = socio;
+	}
+
+	public ArrayList<Copia> getFilmes() {
+		return filmes;
+	}
+
+	public void setFilmes(ArrayList<Copia> filmes) {
+		this.filmes = filmes;
+	}
+
 	@Override
 	public String toString() {
-		return "Cliente = :" + socio + ", filmes = : " + filmes.get(0).getFilme();
+		return "Cliente: " +socio.getNome() +  "\nfilmes alugados: " +  filmes.size() + "\nfilmes: " + filmes.toString();
 	}
 	
+	//metodos publicos 
 	
+	public void addFimes(Copia filme ) {
+		
+		filmes.add(filme);
+		
+	}
 	
 		
 	

@@ -13,8 +13,8 @@ public class Socio {
 	private Date adesao;
 	
 	/////
-	public Socio() {
-		
+	public Socio(String nome) {
+	this.nome = nome;
 	}
 	
 	
@@ -104,10 +104,10 @@ public class Socio {
 
 
 
-	@Override
+/*@Override
 	public String toString() {
 		return "Socio historicoFilmes= " + historicoFilmes + ", nome= " + nome;
-	}
+	}*/
 	
 	
 	

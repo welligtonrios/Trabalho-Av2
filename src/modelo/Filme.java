@@ -116,8 +116,7 @@ public void addAtores(String a) {
 
 @Override
 public String toString() {
-	return "Filme\n titulo= " + titulo + ", duracao= " + duracao + "Hrs"+ ", anoLancamento= " + anoLancamento + ", formato= "
-			+ formato + ", atores= " + listAtores + "  numero de copias :  " +  listcopias.size();
+	return "\ntitulo: " + titulo +" " + anoLancamento;
 }
 
 

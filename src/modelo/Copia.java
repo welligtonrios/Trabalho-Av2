@@ -3,13 +3,13 @@ package modelo;
 public class Copia {
 
 	private Filme filme;
-	private String numero;
-	private Boolean status = true;
+	private int numero;
+	private Boolean status = false;
 	
 	
 	/////
 	
-	public Copia(Filme filme, String i) {
+	public Copia(Filme filme, int i) {
 		this.filme = filme;
 		this.numero = i;
 	}
@@ -31,14 +31,14 @@ public class Copia {
 
 
 
-	public String getNumero() {
+	public int getNumero() {
 		return numero;
 	}
 
 
 
 
-	public void setNumero(String numero) {
+	public void setNumero(int numero) {
 		this.numero = numero;
 	}
 
@@ -59,7 +59,7 @@ public class Copia {
 
 	@Override
 	public String toString() {
-		return " filme = " + filme + ",numero = " + (String) numero ;
+		return  filme.toString() + ", numero = " +  numero + "                                           filme: " + status; 
 	}
 	
 	
